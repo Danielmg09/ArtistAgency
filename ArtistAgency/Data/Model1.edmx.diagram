@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="79c8a8310db347d69c52baa275aa15fe" Name="Diagram1">
+        <EntityTypeShape EntityType="agencydbModel.Actor" Width="1.5" PointX="5.25" PointY="1.625" />
+        <EntityTypeShape EntityType="agencydbModel.Client" Width="1.5" PointX="3" PointY="2.75" />
+        <EntityTypeShape EntityType="agencydbModel.Concert" Width="1.5" PointX="7.5" PointY="4.875" />
+        <EntityTypeShape EntityType="agencydbModel.Job" Width="1.5" PointX="5.25" PointY="7.375" />
+        <EntityTypeShape EntityType="agencydbModel.Movie" Width="1.5" PointX="7.5" PointY="1.375" />
+        <EntityTypeShape EntityType="agencydbModel.Musician" Width="1.5" PointX="5.25" PointY="4.25" />
+        <EntityTypeShape EntityType="agencydbModel.User" Width="1.5" PointX="0.75" PointY="2.875" />
+        <AssociationConnector Association="agencydbModel.FK_Actor_Client" />
+        <AssociationConnector Association="agencydbModel.FK_Movie_Actor" />
+        <AssociationConnector Association="agencydbModel.FK_Client_User" />
+        <AssociationConnector Association="agencydbModel.FK_Musician_Client" />
+        <AssociationConnector Association="agencydbModel.FK_Concert_Job" />
+        <AssociationConnector Association="agencydbModel.FK_Concert_Musician" />
+        <AssociationConnector Association="agencydbModel.FK_Movie_Job" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
